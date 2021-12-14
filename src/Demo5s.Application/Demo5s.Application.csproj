@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Demo5s</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo5s.Domain\Demo5s.Domain.csproj" />
+    <ProjectReference Include="..\Demo5s.Application.Contracts\Demo5s.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.39" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="NLog" Version="4.7.13" />
+    <PackageReference Include="NLog.Config" Version="4.7.13" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="4.4.4" />
+  </ItemGroup>
+
+</Project>
